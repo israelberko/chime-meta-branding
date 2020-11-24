@@ -58,7 +58,7 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     image: "docker.io/cellwizeltd/chime-coming-soon-workspace:next"
+     image: "docker.io/cellwizeplatform/chime-coming-soon-workspace:7.21.2"
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
