@@ -58,7 +58,7 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     image: "docker.io/cellwizeplatform/chime-python-workspace:7.21.1"
+     image: "docker.io/cellwizeplatform/chime-python-workspace:7.21.2"
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
