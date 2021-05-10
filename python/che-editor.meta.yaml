@@ -58,7 +58,7 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     image: "docker.io/cellwizeplatform/chime-python-workspace:7.21.1"
+     image: "docker.io/cellwizeplatform/chime-python-workspace:7.21.2"
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
@@ -81,7 +81,7 @@ spec:
      memoryLimit: "512M"
   initContainers:
   - name: remote-runtime-injector
-    image: "quay.io/eclipse/che-theia-endpoint-runtime-binary:7.21.1"
+    image: "quay.io/eclipse/che-theia-endpoint-runtime-binary:7.21.2"
     volumes:
       - mountPath: "/remote-endpoint"
         name: remote-endpoint
