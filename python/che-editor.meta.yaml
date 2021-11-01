@@ -48,8 +48,8 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     #image: "docker.io/cellwizeplatform/chime-python-workspace:7.31.2"
-     image: "quay.io/eclipse/che-theia-branding-example:7.27.2"
+     image: "docker.io/cellwizeplatform/chime-python-workspace:7.31.2"
+     #image: "quay.io/eclipse/che-theia-branding-example:7.27.2"
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
