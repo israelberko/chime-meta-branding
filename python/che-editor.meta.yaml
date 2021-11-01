@@ -1,7 +1,9 @@
+
+   
 apiVersion: v2
 publisher: eclipse
 name: che-theia
-version: next
+version: 7.27.2
 type: Che Editor
 displayName: theia-ide
 title: Eclipse Theia development version.
@@ -9,7 +11,7 @@ description: Eclipse Theia, get the latest release each day.
 icon: https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
 category: Editor
 repository: https://github.com/eclipse/che-theia
-firstPublicationDate: "2019-03-07"
+firstPublicationDate: "2021-03-19"
 spec:
   endpoints:
    -  name: "theia"
@@ -21,16 +23,6 @@ spec:
         secure: true
         cookiesAuthEnabled: true
         discoverable: false
-   -  name: "webviews"
-      public: true
-      targetPort: 3100
-      attributes:
-        protocol: http
-        type: webview
-        secure: true
-        cookiesAuthEnabled: true
-        discoverable: false
-        unique: true
    -  name: "theia-dev"
       public: true
       targetPort: 3130
@@ -58,16 +50,15 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     image: "docker.io/cellwizeplatform/chime-python-workspace:7.31.2"
+     #image: "docker.io/cellwizeplatform/chime-python-workspace:7.31.2"
+     image: "quay.io/eclipse/che-theia-branding-example:7.27.2"
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
          - name: HOSTED_PLUGIN_HOSTNAME
            value: 0.0.0.0
          - name: HOSTED_PLUGIN_PORT
-           value: "3130"
-         - name: THEIA_HOST
-           value: 127.0.0.1
+           value: 3130
      volumes:
          - mountPath: "/plugins"
            name: plugins
@@ -79,15 +70,3 @@ spec:
          - exposedPort: 13132
          - exposedPort: 13133
      memoryLimit: "512M"
-  initContainers:
-  - name: remote-runtime-injector
-    image: "quay.io/eclipse/che-theia-endpoint-runtime-binary:7.31.2"
-    volumes:
-      - mountPath: "/remote-endpoint"
-        name: remote-endpoint
-        ephemeral: true
-    env:
-      - name: PLUGIN_REMOTE_ENDPOINT_EXECUTABLE
-        value: /remote-endpoint/plugin-remote-endpoint
-      - name: REMOTE_ENDPOINT_VOLUME_NAME
-        value: remote-endpoint
