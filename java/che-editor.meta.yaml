@@ -58,7 +58,7 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     image: "docker.io/cellwizeplatform/chime-java-workspace:7.34.x"
+     image: "docker.io/mudex/chime-java-workspace:7.34.x"
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
