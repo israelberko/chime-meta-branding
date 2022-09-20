@@ -1,0 +1,22 @@
+{
+    "name": "Chime Developer Java Workspace",  
+    "icon": "chime-developer.png", 
+    "logo": {                                
+        "dark": "cellwize-logo-dark.png",
+        "light": "cellwize-logo-light.png"
+    },
+    "welcome": {                             
+        "title": "Chime Developer Java Application Workspace",
+        "links": ["website", "documentation"]
+    },
+    "links": {                               
+        "website": {
+            "name": "Discover Chime Platform",
+            "url": "https://www.cellwize.com/platform/"
+        },
+        "documentation": {
+            "name": "Browse Documentation Of Chime Platform",
+            "url": "https://kb.cellwize.com/display/DPO/API+References"
+        }
+    }
+}	 
