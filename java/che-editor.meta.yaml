@@ -85,7 +85,7 @@ spec:
         secure: true
       public: true
   containers:
-    - image: 'index.docker.io/mudex/developer-java-theia@sha256:6790e59718a446f314146b08f247a97d44955d562bfefd976654b4c639ab7e56'
+    - image: 'mudex/developer-java-theia:7.41.2'
       env:
         - name: THEIA_PLUGINS
           value: 'local-dir:///plugins'
