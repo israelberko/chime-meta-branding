@@ -1,12 +1,12 @@
 {
-    "name": "Qualcomm Edgewize Java Workspace",
+    "name": "Qualcomm Edgewize Python Workspace",
     "icon": "chime-developer.png", 
     "logo": {                                
         "dark": "logo-dark.png",
         "light": "logo-light.png"
     },
     "welcome": {                             
-        "title": "Qualcomm Edgewize Java Application Workspace",
+        "title": "Qualcomm Edgewize Python Application Workspace",
         "links": ["website", "documentation"]
     },
     "links": {                               
