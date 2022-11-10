@@ -1,21 +1,21 @@
 {
-    "name": "Qualcomm Edgewize Java Workspace",
+    "name": "Qualcomm Edgewise Java Workspace",
     "icon": "chime-developer.png", 
     "logo": {                                
         "dark": "logo-dark.png",
         "light": "logo-light.png"
     },
     "welcome": {                             
-        "title": "Qualcomm Edgewize Java Application Workspace",
+        "title": "Qualcomm Edgewise Java Application Workspace",
         "links": ["website", "documentation"]
     },
     "links": {                               
         "website": {
-            "name": "Discover Edgewize Platform",
+            "name": "Discover Edgewise Platform",
             "url": "https://www.cellwize.com/platform/"
         },
         "documentation": {
-            "name": "Browse Documentation Of Edgewize Platform",
+            "name": "Browse Documentation Of Edgewise Platform",
             "url": "https://kb.cellwize.com/display/DPO/API+References"
         }
     }
